@@ -47,6 +47,10 @@ body {
     background-color: plum;
 }
 
-.services {
-    text-align: left;
+.services li ul{
+    text-align: left
 }
+.services:after {
+    clear: both;
+}
+
