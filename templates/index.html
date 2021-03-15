@@ -1,5 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
+<style>
+    .logo img{
+    position: relative;;
+    left: 50%;
+    margin-left: -200px;
+    margin-bottom: -100px;
+    margin-top: -75px;
+    width: 400px;
+}
+
+
+.header h1{
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 25px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 0px;
+    margin-left: 40px;
+    text-align: center;
+}
+
+.header ul {
+    list-style-type: none;
+    margin: 0;
+    margin-top: 30px;
+    padding: 0;
+    overflow: hidden;
+    background-color: darkkhaki;
+    
+}
+  
+.header li {
+    float: left;
+}
+  
+.header li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 18px 20px;
+    text-decoration: none;
+}
+.header li a:hover {
+    background-color: plum;
+}
+
+.services {
+    text-align: left;
+}
+
+.about img{
+    width: 300px;
+
+}
+
+.column {
+    float: left;
+    width: 310px;
+    padding: 5px;
+}
+  .column:after {
+      width: auto;
+}
+  
+  /* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+  
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px) {
+.column {
+    width: 100%;
+}
+}
+</style>
 <head>
     <link rel="stylesheet" href="styles.css">
     <meta charset="UTF-8">
@@ -10,7 +90,7 @@
 <!--Test For Commit-->
 <body>
     <div class="logo">
-        <img src="images/Losers Law.png" alt="">
+        <img src="{{url_for('static', filename='logo.png')}}" />
     </div>
     <div class="header">
         <ul>
@@ -30,7 +110,7 @@
     <div class="about">
         <div class="row">
             <div class="column">
-                <img src="Images/ceo.png" alt="CEO">
+                <img src="{{url_for('static', filename='ceo.png')}}" />
             </div>
             <div class="column">
                 <h2>Adam Macintyre</h2>
@@ -40,7 +120,7 @@
         </div>
         <div class="row">
             <div class="column">
-                <img src="Images/cfo.png" alt="">
+                <img src="{{url_for('static', filename='cfo.png')}}" />
             </div>
             <div class="column">
                 <h2>Jessica Soctty</h2>
@@ -50,7 +130,7 @@
         </div>
         <div class="row">
             <div class="column">
-                <img src="Images/coo.png" alt="">
+                <img src="{{url_for('static', filename='coo.png')}}" />
             </div>
             <div class="column">
                 <h2>Benicio Fitipaldi</h2>
