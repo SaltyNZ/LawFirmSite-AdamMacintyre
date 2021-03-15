@@ -3,9 +3,11 @@ body {
 }
 
 .logo img{
-    position: fixed;
+    position: relative;;
     left: 50%;
     margin-left: -200px;
+    margin-bottom: -100px;
+    margin-top: -75px;
     width: 400px;
 }
 
@@ -50,3 +52,30 @@ body {
 .services {
     text-align: left;
 }
+
+.about img{
+    width: 300px;
+
+}
+
+.column {
+    float: left;
+    width: 310px;
+    padding: 5px;
+  }
+  .column:after {
+      width: auto;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+  @media screen and (max-width:600px) {
+    .column {
+      width: 100%;
+    }
