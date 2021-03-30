@@ -13,4 +13,7 @@ And More
 
 This is a website application it can be used by anyone as a referance on how to build a website but there are better examples out there
 
+Getting started:
+Download the files and run the web application using Flask or upload it to the webhosting service of your choice.
+
 Author: Adam Macintyre
